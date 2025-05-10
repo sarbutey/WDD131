@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131: Dynamic Web Fundamentals</title>
+  <link rel="stylesheet" href="styles/base.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="name">DAVID SARBUTEY</span></h1>
+    <nav>
+      <div><a href="https://www.linkedin.com/in/david-sarbutey-25b264321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      <div><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></div>
+      <div><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a></div>
+      <div><a href="#" target="_blank">Final Project</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <div class="content">
+        <div class="bio">
+          <p>
+            Hello! I'm David Sarbutey, currently living in Ghana. I am a student in Brigham Young University. I enjoy
+            learning new things, spending time with my family, and exploring the web development world.
+          </p>
+          <h3>Accra, Ghana</h3>
+          <div class="flag-paragraph">
+            <figure>
+              <img src="images/flag.jpg" alt="Official Flag" />
+              <figcaption>Official Flag of Ghana</figcaption>
+            </figure>
+            <p>
+              Ghana is known as a peaceful country. It's a place full of culture, beauty, and natural wonders. The country is famous for its rich history, vibrant festivals, and welcoming people. Ghana is also home to stunning beaches, lush rainforests, and historic landmarks like Cape Coast Castle and Kakum National Park. Its diverse cuisine, featuring dishes like jollof rice and fufu, is a must-try for visitors.
+            </p>
+          </div>
+        </div>
+        <div class="profile-photo">
+          <img src="images/rsz_img_0142.jpg" alt="My Photo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+        <li><a href="#" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 🌸 DAVID SARBUTEY 🌸 GHANA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
