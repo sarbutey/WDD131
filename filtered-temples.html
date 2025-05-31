@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- CSS Files (Mobile First) -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples.large.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+
+
+  <!-- JavaScript -->
+  <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+<header class="top-bar">
+  <h1>Temple Album</h1>
+  <button id="menuButton" aria-label="Menu">☰</button>
+  <nav class="nav" id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Large</a> 
+    <a href="#">Old</a>
+  </nav>
+</header>
+
+  <main>
+    <h1>Home</h1>
+    <section class="temple-grid">
+      <!-- Temple cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+  <script>
+  const menuButton = document.getElementById("menuButton");
+  const navMenu = document.getElementById("navMenu");
+
+  menuButton.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+</script>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 🌸 DAVID SARBUTEY 🌸 GHANA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
