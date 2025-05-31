@@ -1,29 +1,22 @@
 :root {
---main-red: #d2232a;
---main-green: #007847;
---white: #fff;
---text: #333;
+  --main-red: #d2232a;
+  --main-green: #007847;
+  --white: #fff;
+  --text: #333;
 }
 
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-color: var(--text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--text);
 }
 
 header {
-background: var(--main-red);
-color: var(--white);
-text-align: center;
-padding: 1rem;
+  background: var(--main-red);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
 }
-
-
-
-
-
-
-/* ...existing code... */
 
 /* Desktop view: overlay effect */
 @media (min-width: 600px) {
@@ -34,7 +27,7 @@ padding: 1rem;
   .hero-container picture img {
     width: 100%;
     display: block;
-}
+  }
 
   .data {
     position: absolute;
@@ -50,7 +43,7 @@ padding: 1rem;
   .weather {
     position: absolute;
     bottom: 20px;
-    right: 20px; /* <-- This moves it to the bottom right */
+    right: 20px;
     width: 260px;
     background-color: rgba(255, 255, 255, 0.95);
     padding: 1rem;
@@ -68,20 +61,11 @@ padding: 1rem;
   }
 
   .weather h2::after {
-  content: "";
-}
-
-.weather h2 .icon {
-  display: inline; /* Show icon by default (mobile) */
-}
-
-/* Desktop Layout */
-@media (min-width: 600px) {
-  .weather h2::after {
     content: " ⛅";
   }
+
   .weather h2 .icon {
-    display: none; /* Hide span.icon on desktop */
+    display: none;
   }
 
   footer {
@@ -90,12 +74,16 @@ padding: 1rem;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+  }
 }
+
+/* Mobile Weather Icon (SVG) */
+.weather h2 .icon {
+  display: inline;
 }
 
-
-
-
-
-
+@media (min-width: 600px) {
+  .weather h2 .icon {
+    display: none;
+  }
 }
