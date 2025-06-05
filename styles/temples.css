@@ -14,13 +14,14 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: center;
 }
 
 header h1 {
   margin: 0;
   font-size: 3rem;
-  font-style: bold;
+  font-style: normal;
+  font-weight: bold;
 }
 
 nav {
@@ -37,7 +38,8 @@ nav a {
   border-radius: 2px;
   text-align: left;
   transition: background-color 0.3s;
-  font-style: bold;
+  font-style: normal;
+  font-weight: bold;
   font-size: 2rem;
 }
 
