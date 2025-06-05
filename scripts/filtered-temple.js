@@ -50,7 +50,7 @@ const temples = [
     area: 11500,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5092-thumb.jpg"
   }
-  // ...add more as needed
+  
 ];
 
 function createTempleCard() {
