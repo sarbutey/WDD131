@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+    <!-- Optionally, display submitted data here -->
+    <a href="form.html">Submit another review</a>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span>🌸 DAVID SARBUTEY 🌸 GHANA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    // Footer year and last modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
