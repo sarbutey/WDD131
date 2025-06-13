@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Green Roots Gardening Club - Connect, Grow, and Learn Together">
+  <meta name="author" content="DAVID SARBUTEY">
+
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon" >
+  <meta property="og:title" content="Green Roots Gardening Club">
+  <meta property="og:description" content="Join our community of gardeners and eco-enthusiasts.">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="scripts/main.js" defer></script>
+
+  <title>Home | Green Roots Gardening Club</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Green Roots Gardening Club Logo">
+      <span>Green Roots<br><small>Gardening Club</small></span>
+    </div>
+    <!-- Place theme-toggle above the navigation menu -->
+    <div class="theme-toggle-bar">
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+    </div>
+    <nav>
+      <ul id="main-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Grow Together with the Green Roots Gardening Club</h1>
+      <div class="buttons">
+        <a href="join.html" class="cta-button">Join Now</a>
+        <a href="about.html" class="cta-button secondary">Learn More</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/about.webp" alt="About the Club">
+      <div class="about-text">
+        <h2>About the Club</h2>
+        <p>We are a passionate community dedicated to eco-conscious gardening, local collaboration, and sustainable growth. Our goal is to support gardeners of all levels and promote green practices in our neighborhoods.</p>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div class="event-list">
+        <div class="event-card">
+          <img src="images/spring.webp" alt="Spring Planting">
+          <h3>Spring Planting</h3>
+          <p>June 20, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+        <div class="event-card">
+          <img src="images/community.webp" alt="Cleanup Day">
+          <h3>Community Cleanup</h3>
+          <p>July 10, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+        <div class="event-card">
+          <img src="images/seedtime.webp" alt="Seedtime Workshop">
+          <h3>Seedtime Workshop</h3>
+          <p>August 5, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+        <div class="event-card">
+          <img src="images/harvest.webp" alt="Harvest Festival">
+          <h3>Harvest Festival</h3>
+          <p>September 15, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+        <div class="event-card">
+          <img src="images/plant-exchange.webp" alt="Plant Exchange">
+          <h3>Plant Exchange</h3>
+          <p>October 3, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+        <div class="event-card">
+          <img src="images/holiday.webp" alt="Holiday Wreath Workshop">
+          <h3>Holiday Wreath Workshop</h3>
+          <p>December 1, 2025</p>
+          <a href="events.html" class="event-btn">Register</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>Green Roots Gardening Club</strong><br>
+        123 Garden Lane, Accra, Ghana<br>
+        info@greenrootsclub.org<br>
+        +233 555 123 456</p>
+    </div>
+    <div class="social">
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="ilnkedin"></a>
+    </div>
+    <div class="dev-info">
+      <p>WDD131 Project<br>DAVID SARBUTEY<br>
+      Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    // Responsive menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("main-nav").classList.toggle("open");
+      this.setAttribute(
+        "aria-label",
+        document.getElementById("main-nav").classList.contains("open")
+          ? "Close navigation menu"
+          : "Open navigation menu"
+      );
+    });
+    // Last modified date
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
